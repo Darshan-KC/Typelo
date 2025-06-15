@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typelo - Typing Speed Test</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1 class="app-title">Typelo</h1>
+      <h1 class="app-title">Typelo</h1>
+
+      <div class="quote-box">
+        <p id="quote" class="quote-text">Loading quote...</p>
+      </div>
+
+      <textarea
+        id="input-area"
+        class="input-area"
+        placeholder="Start typing here..."
+        rows="5"
+      ></textarea>
+
+      <div class="stats">
+        <div><strong>Time:</strong> <span id="time">0</span>s</div>
+        <div><strong>WPM:</strong> <span id="wpm">0</span></div>
+        <div><strong>Accuracy:</strong> <span id="accuracy">0%</span></div>
+      </div>
+
+      <div class="buttons">
+        <button id="start-btn">Start</button>
+        <button id="restart-btn" disabled>Restart</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
