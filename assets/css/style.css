@@ -15,3 +15,21 @@ body {
   min-height: 100vh;
   padding: 1rem;
 }
+
+/* Container */
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.app-title {
+  font-size: 2rem;
+  color: #5b21b6;
+  margin-bottom: 1.5rem;
+}
