@@ -33,3 +33,78 @@ body {
   color: #5b21b6;
   margin-bottom: 1.5rem;
 }
+
+
+/* Quote Box */
+.quote-box {
+  background-color: #f0f0ff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  min-height: 100px;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-wrap: break-word;
+}
+
+/* Input Area */
+.input-area {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  resize: none;
+  outline: none;
+}
+
+.input-area:focus {
+  border-color: #5b21b6;
+  background-color: #fafafa;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.stats div {
+  background-color: #f4f4f4;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #5b21b6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #4c1d95;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
