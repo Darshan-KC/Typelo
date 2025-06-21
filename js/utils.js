@@ -18,3 +18,17 @@ export function getRandomQuote() {
   const index = Math.floor(Math.random() * quotes.length);
   return quotes[index];
 }
+
+/**
+ * Reset all stats and visual classes.
+ */
+export function resetUI() {
+  document.getElementById('wpm').textContent = 0;
+  document.getElementById('accuracy').textContent = '0%';
+  document.getElementById('time').textContent = 0;
+
+  const spans = document.querySelectorAll('#quote span');
+  spans.forEach(span => {
+    span.className = ''; // Clear all classes
+  });
+}
