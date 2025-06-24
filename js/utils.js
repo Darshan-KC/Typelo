@@ -4,7 +4,7 @@
  * Get a random quote from a list.
  * @returns {string} Random quote
  */
-export function getRandomQuote() {
+export function getRandomQuoteArray() {
   const quotes = [
     "Practice makes perfect.",
     "The quick brown fox jumps over the lazy dog.",
@@ -17,6 +17,27 @@ export function getRandomQuote() {
 
   const index = Math.floor(Math.random() * quotes.length);
   return quotes[index];
+}
+
+/**
+ * Fetch a random quote from a json file.
+ * @returns {Promise<string>} A promise that resolve a random quote.
+ */
+export async function getRandomQuote(){
+  try {
+    const response = await fetch('/assets/json/quotes.json');
+    const quotes = await response.json();
+
+    if(!Array.isArray(quotes) || quotes.length === 0){
+      throw new Error("Quotes data in invalid.");
+    }
+    const index = Math.floor(Math.random() * quotes.length);
+    return quotes[index];
+
+  } catch (error) {
+    console.error("Error fetching quotes: ", error);
+    return "An error occurs while fetching quotes.";
+  }
 }
 
 /**
