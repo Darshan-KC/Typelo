@@ -13,4 +13,6 @@ let currentQuote = "";
 (async () => {
     const quote = await getRandomQuote();
     console.log(quote);
+    currentQuote = quote;
+    quoteElement.innerHTML = currentQuote;
 })();
