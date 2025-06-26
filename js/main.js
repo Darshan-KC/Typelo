@@ -16,3 +16,16 @@ let currentQuote = "";
     currentQuote = quote;
     quoteElement.innerHTML = currentQuote;
 })();
+
+function initGame() {
+  currentQuote = getRandomQuote();
+  renderQuote(currentQuote);
+  resetTyping();
+  resetUI();
+  resetTimer();
+  resetStats();
+  inputElement.value = "";
+  inputElement.disabled = false;
+  inputElement.focus();
+  restartBtn.disabled = false;
+}
