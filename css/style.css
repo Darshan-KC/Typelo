@@ -108,3 +108,11 @@ button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
