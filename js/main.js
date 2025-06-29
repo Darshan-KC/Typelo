@@ -30,3 +30,12 @@ function initGame() {
   inputElement.focus();
   restartBtn.disabled = false;
 }
+
+startBtn.addEventListener('click', () => {
+  initGame();
+  startTimer();
+});
+
+restartBtn.addEventListener('click', () => {
+  initGame();
+});
