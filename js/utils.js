@@ -53,3 +53,12 @@ export function resetUI() {
     span.className = ''; // Clear all classes
   });
 }
+
+/**
+ * Count words in a string.
+ * @param {string} text 
+ * @returns {number}
+ */
+export function countWords(text) {
+  return text.trim().split(/\s+/).length;
+}
