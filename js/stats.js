@@ -18,3 +18,8 @@ export function updateStats(input, quote, correctChars) {
 
   updateDisplay(wpm, accuracy);
 }
+
+function updateDisplay(wpm, accuracy) {
+  document.getElementById('wpm').textContent = isFinite(wpm) ? wpm : 0;
+  document.getElementById('accuracy').textContent = isFinite(accuracy) ? `${accuracy}%` : '0%';
+}
