@@ -1,4 +1,4 @@
-
+import { updateStats } from './stats.js';
 
 /**
  * Compare input to quote and update character styles
@@ -22,4 +22,6 @@ export function handleTypingInput(quote, input) {
       charSpan.className = 'incorrect';
     }
   });
+
+  updateStats(input, quote, correctCount);
 }
