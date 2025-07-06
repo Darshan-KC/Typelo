@@ -1,7 +1,7 @@
 // main.js
 
 import { getRandomQuote } from './utils.js';
-import {startTimer, resetTimer} from '.timer.js';
+import {startTimer, resetTimer} from './timer.js';
 // import { renderQuote, resetUI } from './ui.js';
 
 
