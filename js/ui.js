@@ -7,6 +7,7 @@ export function renderQuote(quote) {
   quoteElement.innerHTML = '';
 
   quote.split('').forEach(char => {
+  // quote.slice('').forEach(char => {
     const span = document.createElement('span');
     span.textContent = char;
     quoteElement.appendChild(span);

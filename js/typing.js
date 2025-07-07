@@ -1,5 +1,9 @@
 import { updateStats } from './stats.js';
 
+export function resetTyping() {
+  // Nothing to reset here yet, but we may use this later
+}
+
 /**
  * Compare input to quote and update character styles
  * @param {string} quote 
