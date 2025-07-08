@@ -13,3 +13,17 @@ export function renderQuote(quote) {
     quoteElement.appendChild(span);
   });
 }
+
+/**
+ * Reset all stats and visual classes.
+ */
+export function resetUI() {
+  document.getElementById('wpm').textContent = 0;
+  document.getElementById('accuracy').textContent = '0%';
+  document.getElementById('time').textContent = 0;
+
+  const spans = document.querySelectorAll('#quote span');
+  spans.forEach(span => {
+    span.className = ''; // Clear all classes
+  });
+}
