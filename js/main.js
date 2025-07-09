@@ -3,8 +3,7 @@
 import { getRandomQuote } from './utils.js';
 import {startTimer, resetTimer} from './timer.js';
 import { resetTyping } from './typing.js';
-// import { renderQuote, resetUI } from './ui.js';
-import { renderQuote } from './ui.js';
+import { renderQuote, resetUI } from './ui.js';
 import { resetStats } from './stats.js';
 
 const quoteElement = document.getElementById('quote');
@@ -25,7 +24,7 @@ async function initGame() {
   console.log(currentQuote);
   renderQuote(currentQuote);
   resetTyping();
-  // resetUI();
+  resetUI();
   resetTimer();
   resetStats();
   inputElement.value = "";
