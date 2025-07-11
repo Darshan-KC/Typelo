@@ -31,11 +31,13 @@ async function initGame() {
   inputElement.disabled = false;
   inputElement.focus();
   restartBtn.disabled = false;
+
+  startTimer();
 }
 
 startBtn.addEventListener('click', () => {
   initGame();
-  startTimer();
+  
 });
 
 restartBtn.addEventListener('click', () => {

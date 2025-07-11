@@ -8,7 +8,9 @@ export function startTimer() {
   intervalId = setInterval(() => {
     const elapsed = Math.floor((Date.now() - startTime) / 1000);
     timeDisplay.textContent = elapsed;
+    console.log(elapsed);
   }, 1000);
+  // console.log('timer started');
 }
 
 export function resetTimer() {
