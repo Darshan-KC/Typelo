@@ -2,7 +2,7 @@
 
 import { getRandomQuote } from './utils.js';
 import {startTimer, resetTimer} from './timer.js';
-import { resetTyping } from './typing.js';
+import { resetTyping, handleTypingInput } from './typing.js';
 import { renderQuote, resetUI } from './ui.js';
 import { resetStats } from './stats.js';
 
@@ -42,4 +42,8 @@ startBtn.addEventListener('click', () => {
 
 restartBtn.addEventListener('click', () => {
   initGame();
+});
+
+inputElement.addEventListener('input', () => {
+  handleTypingInput(currentQuote, inputElement.value);
 });
