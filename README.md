@@ -1,1 +1,2 @@
-# Typelo
+# Typelo – Typing Speed Test App
+Typelo is a fun and interactive web app to test your typing speed, accuracy, and focus. Built with modern JavaScript, HTML, and CSS, it offers real-time feedback and clean UI for an enjoyable typing experience.
