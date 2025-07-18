@@ -45,3 +45,16 @@ npx http-server
 - HTML5
 - CSS3
 - JavaScript (ES Modules)
+
+## 📄 License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This project is licensed under the [MIT License](LICENSE).  
+You are free to use, modify, and distribute this software in compliance with the license terms.
+
+## ©️ Copyright
+
+© 2025 Darshan KC 
+All rights reserved.  
+Typelo is an open-source project released under the MIT license.
